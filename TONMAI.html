@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MET Team – Executive Progress Summary</title>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1420;--panel:#171e2e;--panel2:#1f2837;--border:#2a3346;--text:#e9edf5;--muted:#8b95ab;--accent:#5b8cff;--accent2:#3ddc97;--amber:#ffb84d;--pink:#ff6b8b;--purple:#b18aff;
+padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#f4f6fb;--panel:#fff;--panel2:#f0f2f8;--border:#e1e5f0;--text:#1b2130;--muted:#5c6478;--accent:#3f6bde;--accent2:#1f9d6c;}}
+:root[data-theme="dark"]{--bg:#0f1420;--panel:#171e2e;--panel2:#1f2837;--border:#2a3346;--text:#e9edf5;--muted:#8b95ab;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Sarabun',sans-serif;line-height:1.55;}
+.wrap{max-width:1050px;margin:0 auto;padding:26px 18px 60px;}
+.tag{display:inline-block;background:var(--accent);color:#fff;font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px;}
+h1{font-size:24px;margin:12px 0 4px;font-weight:700;}
+.sub{color:var(--muted);font-size:13.5px;}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0;}
+.stat{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:14px;}
+.stat b{display:block;font-size:22px;color:var(--accent2);}
+.stat span{font-size:12px;color:var(--muted);}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:16px;margin-bottom:14px;overflow:hidden;}
+.card-head{padding:16px 18px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.card-head:hover{background:var(--panel2);}
+.who{display:flex;align-items:center;gap:12px;}
+.avatar{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:#0b0f18;flex-shrink:0;font-size:13px;}
+.name{font-weight:600;font-size:15.5px;}
+.role{font-size:12px;color:var(--muted);}
+.chev{transition:transform .2s;color:var(--muted);}
+.card.open .chev{transform:rotate(90deg);}
+.body{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+.card.open .body{max-height:2600px;}
+.body-inner{padding:0 18px 18px;border-top:1px solid var(--border);}
+.section-title{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:14px 0 7px;font-weight:600;}
+ul.list{margin:0;padding-left:18px;}
+ul.list li{margin-bottom:5px;font-size:14px;}
+.progress-row{display:flex;align-items:center;gap:10px;margin:9px 0;}
+.progress-row .label{width:150px;font-size:13px;color:var(--muted);flex-shrink:0;}
+.bar{flex:1;height:9px;background:var(--panel2);border-radius:6px;overflow:hidden;}
+.bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));}
+.badge-target{font-size:12.5px;color:var(--muted);white-space:nowrap;}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:6px;}
+.pill{background:var(--panel2);border:1px solid var(--border);padding:5px 11px;border-radius:20px;font-size:12.5px;}
+.st{font-weight:600;}
+.st-go{color:var(--accent2);} .st-wait{color:var(--amber);} .st-no{color:var(--pink);} .st-ing{color:var(--accent);}
+table{width:100%;border-collapse:collapse;margin-top:8px;font-size:13px;}
+th,td{text-align:left;padding:8px 9px;border-bottom:1px solid var(--border);}
+th{color:var(--muted);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.03em;}
+.tbl-wrap{overflow-x:auto;}
+.note{background:var(--panel2);border:1px dashed var(--border);border-radius:10px;padding:11px 13px;font-size:13px;color:var(--muted);margin-top:12px;}
+.highlight{color:var(--accent2);font-weight:600;}
+footer{margin-top:26px;font-size:12px;color:var(--muted);text-align:center;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+@media(max-width:640px){.two-col{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <span class="tag">MET · Executive Summary</span>
+  <h1>สรุปความคืบหน้าทีม MET — โครงการ B2B NIA</h1>
+  <div class="sub">อ้างอิงจากบอร์ดประชุมประสานทีมและวาระการประชุม 18/09/2569 · คลิกแต่ละหัวข้อเพื่อดูรายละเอียด</div>
+</header>
+
+<div class="stats">
+  <div class="stat"><b>3 / 5</b><span>LSP ปิดสำเร็จแล้ว (เป้าหมาย 5 ราย)</span></div>
+  <div class="stat"><b>0 / 5</b><span>Shipper ปิดสำเร็จแล้ว (เป้าหมาย 5 ราย)</span></div>
+  <div class="stat"><b>11</b><span>Shipper ที่ต้องติดต่อเพิ่ม</span></div>
+  <div class="stat"><b>2-3</b><span>Shipper ที่ต้องปิดให้ได้เพิ่ม</span></div>
+</div>
+
+<div class="card open" id="c0">
+  <div class="card-head" onclick="toggle('c0')">
+    <div class="who"><div class="avatar" style="background:var(--amber);">📊</div>
+      <div><div class="name">ภาพรวมความคืบหน้า KPI</div><div class="role">อัปเดตล่าสุด — สถานะการปิดงานจริง</div></div>
+    </div><div class="chev">▶</div>
+  </div>
+  <div class="body"><div class="body-inner">
+    <div class="section-title">LSP</div>
+    <div class="progress-row"><div class="label">ปิดสำเร็จแล้ว</div><div class="bar"><i style="width:60%"></i></div><div class="badge-target">3 / 5 ราย (60%)</div></div>
+    <div class="section-title">Shipper</div>
+    <div class="progress-row"><div class="label">ปิดสำเร็จแล้ว</div><div class="bar"><i style="width:0%"></i></div><div class="badge-target">0 / 5 ราย</div></div>
+    <div class="progress-row"><div class="label">อยู่ระหว่างติดต่อ</div><div class="bar"><i style="width:100%;background:linear-gradient(90deg,var(--amber),var(--pink));"></i></div><div class="badge-target">ต้องติดต่อเพิ่ม 11 ราย</div></div>
+    <div class="note">สถานะล่าสุด: ฝั่ง <b>LSP ปิดได้ 3 ราย</b> จากเป้าหมาย 5 ราย (คืบหน้าไปมากกว่าครึ่งทาง) ส่วนฝั่ง <b>Shipper ยังต้องติดต่อเพิ่มอีก 11 ราย</b> และตั้งเป้าปิดให้ได้เพิ่มอีก <b>2-3 ราย</b> เพื่อให้ครบเป้า 5 ราย</div>
+  </div></div>
+</div>
+
+<div class="card" id="c1">
+  <div class="card-head" onclick="toggle('c1')">
+    <div class="who"><div class="avatar" style="background:var(--accent2);">T</div>
+      <div><div class="name">Tonmai — ฝ่ายการตลาด</div><div class="role">จัดหา LSP / Shipper และประสานรถร่วม</div></div>
+    </div><div class="chev">▶</div>
+  </div>
+  <div class="body"><div class="body-inner">
+    <div class="section-title">ผลงานที่ทำแล้ว</div>
+    <ul class="list">
+      <li>ประสานผู้ให้รถร่วม <b>SLIDE 24</b> (ติดต่อผ่าน IG) ได้ยืนยันว่าจัดหารถร่วมเข้าโครงการได้ประเภทละ ~10 คัน: 6WJ, 6W, 10W คอกตู้ทึบ (รวม ~30 คัน) และพร้อมประสานเพิ่มได้อีกถ้าต้องการ</li>
+      <li>ได้รายชื่อผู้ให้ความร่วมมือหารถเพิ่ม: <span class="highlight">พี่เตี่ยว KNN</span> (0909087014), <span class="highlight">พี่มงคล ขายรถ HINO</span> (085-487-6758)</li>
+      <li>ปั้นลูกค้าน้ำมันพืช (PPP GC) จับคู่กับ SLIDE 24 เป็นคู่ทดลองงาน</li>
+    </ul>
+    <div class="section-title">เป้าหมาย KPI (กำหนดส่ง 01/10/69)</div>
+    <ul class="list">
+      <li>Complete Market Validation รวม 15 ราย</li>
+      <li>หา LSP เพิ่มอีก <b>2 ราย</b> / Shipper เพิ่มอีก <b>2 ราย</b></li>
+      <li>หารถเพิ่ม เป้า <b>5 ราย</b> ที่สนใจเข้าร่วม</li>
+    </ul>
+  </div></div>
+</div>
+
+<div class="card" id="c2">
+  <div class="card-head" onclick="toggle('c2')">
+    <div class="who"><div class="avatar" style="background:var(--pink);">อ</div>
+      <div><div class="name">อ.หลิน</div><div class="role">เจรจา LSP / ลูกค้า Panel+ และ PPP Fleet</div></div>
+    </div><div class="chev">▶</div>
+  </div>
+  <div class="body"><div class="body-inner">
+    <div class="section-title">งานที่ดำเนินการ</div>
+    <ul class="list">
+      <li><b>งาน PPP</b>: หารถขากลับภาคใต้เตรียมไว้รองรับความต้องการของ PPP</li>
+      <li><b>งาน Panel+</b>: หารถ Flat-bed พร้อมเสนอราคาต้องต่ำกว่า <b>13,000 บาท</b></li>
+      <li>เป็นผู้รับผิดชอบหลักในการคุยเรื่องเงื่อนไข Panel+: ต้อง OJT ก่อนเข้าวิ่ง, ตรวจสภาพรถที่คลัง, คลุมผ้าใบร้อยมีสายรัด</li>
+      <li>ประสานเรื่องมาตรฐานรถ/LSP ที่จะเข้าวิ่งกับพี่เตี่ยว (มาตรฐานความปลอดภัย + คุณสมบัติรถ)</li>
+    </ul>
+    <div class="section-title">สถานะลูกค้า Panel+</div>
+    <ul class="list">
+      <li>ขึ้นสินค้าที่สงขลา(หาดใหญ่) → ส่งสมุทรสาคร | ต้องการรถ Flatbed | ราคาเป้าหมาย &lt;13,000 บาท</li>
+      <li>Volume ไม่สม่ำเสมอ งานชุกช่วงต้นเดือน มีเคสด่วนต้องใช้รถภายใน 1 ชม.</li>
+    </ul>
+  </div></div>
+</div>
+
+<div class="card" id="c3">
+  <div class="card-head" onclick="toggle('c3')">
+    <div class="who"><div class="avatar" style="background:var(--accent);">IT</div>
+      <div><div class="name">IT Team</div><div class="role">พัฒนา App / ติดต่อ Shipper / วิเคราะห์ข้อมูล</div></div>
+    </div><div class="chev">▶</div>
+  </div>
+  <div class="body"><div class="body-inner">
+    <div class="section-title">เป้าหมายรอบนี้</div>
+    <ul class="list">
+      <li>ติดต่อรายชื่อ Shipper <b>10 ราย</b> → นัดคุยให้ได้ <b>5 ราย</b></li>
+      <li>ดูแลลูกค้า <b>ฟาร์มบ้านชัดเจน</b> (สินค้าเกษตร: ข้าวอัดสูญญากาศ/ผลิตภัณฑ์ปรับสภาพน้ำ) ทำหน้าที่เป็นคนกลางรวบรวมสินค้าให้ได้ปริมาณ</li>
+      <li>วางแผนนำ VRP & Algorithm มาใช้ร่วมกับ App ในโครงการ NIA</li>
+      <li>ทดลองนำ Pricing model มาคำนวณค่าขนส่งฝั่ง B2B</li>
+      <li>จัดทำเอกสาร Co2 Footprint/Report และ Dashboard online</li>
+    </ul>
+    <div class="section-title">ผลทดสอบ App จริง — พี่ข้าวปุ่น (PNM)</div>
+    <div class="two-col">
+      <div>
+        <b style="font-size:13px;">ฝั่งเจ้าของ LSP</b>
+        <ul class="list">
+          <li>ปักหมุดใช้งานยาก</li>
+          <li>ระยะเวลาออเดอร์จำกัด ต้องจองก่อน 6 ชม.</li>
+          <li>ราคาต้องสัมพันธ์กับขนาดรถ</li>
+          <li>ผู้ใช้งานอายุเยอะ รับเทคโนโลยีต่ำ ต้องใช้ง่ายขึ้น</li>
+          <li>อยากจ่ายเป็นเครดิตแบบ B2B (ปัจจุบันเป็น B2C จ่ายสด)</li>
+          <li>ราคาที่คำนวณในระบบต่ำกว่าราคาวิ่งจริงมาก ทำให้รถไม่วิ่ง</li>
+        </ul>
+      </div>
+      <div>
+        <b style="font-size:13px;">ฝั่งคนขับ</b>
+        <ul class="list">
+          <li>ระบบยังไม่ friendly กับคนขับ</li>
+          <li>เข้าใช้งานยุ่งยาก</li>
+          <li>ถ่ายรูปยืนยันงานแล้วอัปโหลดไม่ได้</li>
+        </ul>
+      </div>
+    </div>
+  </div></div>
+</div>
+
+<div class="card" id="c4">
+  <div class="card-head" onclick="toggle('c4')">
+    <div class="who"><div class="avatar" style="background:var(--purple);">Op</div>
+      <div><div class="name">ทีม Operations / Supply Fleet</div><div class="role">หา LSP เพิ่ม, หาคนขับ, คุมมาตรฐานรถ</div></div>
+    </div><div class="chev">▶</div>
+  </div>
+  <div class="body"><div class="body-inner">
+    <div class="section-title">Supply Fleet — หารถเพิ่ม</div>
+    <ul class="list">
+      <li>ฝั่ง LSP: ต้องหารายชื่อเพิ่ม, โทร/ทักติดต่อ, ลงทะเบียนให้ได้ที่ราย — ต้องมีตัวเลขนับได้จริง</li>
+      <li>ทำ content ใน Facebook page LSP เพื่อเพิ่มความเคลื่อนไหว</li>
+      <li>Mek Ai: อัปโหลดเอกสารลงในระบบข้อมูล</li>
+    </ul>
+    <div class="section-title">หางานให้รถ 14 ล้อ ของพี่เตี่ยว</div>
+    <ul class="list">
+      <li>หาพนักงานขับรถ (พขร.) <b>8 คน</b></li>
+      <li>หา solution ดีลงาน/หางานสาย TP, พุทธมณฑล สาย 1,2,3,4,5</li>
+      <li>สรุปรายงานการทำงาน: นำสรุปมารายงานหน้าที่ → จัดเป็น pipeline → ทำให้เป็นของ METRANS 100% → กำหนดส่ง <b>17/09/2569</b></li>
+    </ul>
+    <div class="section-title">แผนต่อเนื่องหลังหารถได้</div>
+    <ul class="list">
+      <li>คอนโทรลรถ ติดตาม ปรับปรุงให้ดีขึ้น</li>
+      <li>เก็บ Record ให้ IT วิเคราะห์ปัญหา เพื่อ Monitor ให้ LSP</li>
+      <li>ตั้ง training center เพื่อนำคนมาขับรถให้บริษัท</li>
+      <li>ต้องคุยกับพี่เตี่ยวเรื่อง LSP ที่จะเข้าวิ่ง และมาตรฐานรถที่จะเข้าวิ่ง</li>
+    </ul>
+  </div></div>
+</div>
+
+<div class="card" id="c5">
+  <div class="card-head" onclick="toggle('c5')">
+    <div class="who"><div class="avatar" style="background:var(--amber);">🚚</div>
+      <div><div class="name">สถานะ LSP ที่มีรายชื่อ (13 ราย)</div><div class="role">รายชื่อ LSP ที่ติดต่อในรอบนี้</div></div>
+    </div><div class="chev">▶</div>
+  </div>
+  <div class="body"><div class="body-inner">
+    <div class="tbl-wrap"><table>
+      <tr><th>LSP</th><th>รายละเอียดรถ</th><th>สถานะ</th></tr>
+      <tr><td>KNN (พี่เตี่ยว)</td><td>4 คัน 14 ล้อ ตู้ทึบ ไป-กลับ</td><td class="st st-go">เอาด้วย</td></tr>
+      <tr><td>PMN (พี่ขวัญปัน)</td><td>—</td><td class="st st-no">ไม่ว่าง</td></tr>
+      <tr><td>PSD (พี่ประดุง)</td><td>3-4 คัน 18 ล้อตู้ทึบ ต้องการงานขากลับใต้-กทม.</td><td class="st st-go">เอาด้วย</td></tr>
+      <tr><td>คุณ X อุ้ย SCGJWD</td><td>คุยแล้ว</td><td class="st st-no">ไม่เอา</td></tr>
+      <tr><td>คุณยันต์ชัย MDH</td><td>—</td><td class="st st-wait">รอการนัด</td></tr>
+      <tr><td>Narin</td><td>6 ล้อ&10 ล้อ ตู้ทึบ ว่าง 10 คัน</td><td class="st st-ing">กำลังดำเนินการ</td></tr>
+      <tr><td>Nop&Jet</td><td>6 ล้อตู้ทึบ</td><td class="st st-wait">รอการนัด</td></tr>
+      <tr><td>PCP (คุณอาคม)</td><td>18 ล้อพ่วง 2 คัน</td><td class="st st-no">ไม่ว่าง</td></tr>
+      <tr><td>พงศ์วัฒน์ ปั๊บเทเลอร์</td><td>หัวลาก Flatbed 4 คัน (ประจำแหลม)</td><td class="st st-no">ไม่ว่าง</td></tr>
+      <tr><td>SLIDE 24 (4PL)</td><td>ประจวบ สายใต้-กรุงเทพฯ</td><td class="st st-go">เอาด้วย / รอการนัด</td></tr>
+      <tr><td>168 แคริเออร์ (คุณกวาง)</td><td>10 คัน เทรลเลอร์ ขน Panel+</td><td class="st st-ing">กำลังดำเนินการ</td></tr>
+      <tr><td>สุวรรณบุตร (บางบอน)</td><td>มีโกดัง โรงงานรถขนส่ง</td><td class="st st-ing">กำลังดำเนินการ</td></tr>
+      <tr><td>นายใส ทราชสปอต</td><td>10 ล้อพ่วงคอก หาดใหญ่-นราธิวาส-ปัตตานี-ยะลา</td><td class="st st-go">ติดต่อแล้ว</td></tr>
+    </table></div>
+    <div class="section-title">สรุปจำนวนรถ</div>
+    <div class="pills">
+      <span class="pill">ขาไป: 0 คัน</span>
+      <span class="pill">ขากลับ (ได้): 8 คัน</span>
+      <span class="pill">ขาไป-กลับ: 2 คัน</span>
+    </div>
+  </div></div>
+</div>
+
+<div class="card" id="c6">
+  <div class="card-head" onclick="toggle('c6')">
+    <div class="who"><div class="avatar" style="background:var(--accent2);">📦</div>
+      <div><div class="name">ลูกค้า / Shipper ที่กำลังดีล (5 ราย)</div><div class="role">Priority Customer</div></div>
+    </div><div class="chev">▶</div>
+  </div>
+  <div class="body"><div class="body-inner">
+    <div class="tbl-wrap"><table>
+      <tr><th>ลูกค้า</th><th>สินค้า / เส้นทาง</th><th>ความต้องการ</th><th>ผู้ดูแล</th></tr>
+      <tr><td>HWH (Hard)</td><td>อุปกรณ์ก่อสร้าง / สมุทรปราการ กม.31 – หาดใหญ่</td><td>18 ล้อตู้ทึบ, ลดต้นทุนค่าส่งด้วยขากลับ</td><td>—</td></tr>
+      <tr><td>PPP GC</td><td>น้ำมันพืช / บางสะพาน-ใต้, สำโรง-ทั่วประเทศ</td><td>ขยายตลาดเหนือ+กทม., ต้องการงานขากลับ</td><td>อ.หลิน</td></tr>
+      <tr><td>ฟาร์มบ้านชัดเจน</td><td>ข้าวอัดสูญญากาศ / ภาคเหนือตอนบน-พิจิตร</td><td>ตู้ทึบ/คอก/กระบะ ราคาแบบ Multidrop</td><td>IT</td></tr>
+      <tr><td>TP (Thai Pacel)</td><td>เครื่องใช้ไฟฟ้า / ใต้-เชียงใหม่-อีสาน</td><td>14-18 ล้อตู้ทึบ กำลังต่อรองราคา</td><td>METRANS</td></tr>
+      <tr><td>Panel+</td><td>ไม้แปรรูป / สงขลา(หาดใหญ่)-สมุทรสาคร</td><td>Flatbed &lt;13,000 บาท</td><td>อ.หลิน</td></tr>
+    </table></div>
+  </div></div>
+</div>
+
+<div class="card" id="c7">
+  <div class="card-head" onclick="toggle('c7')">
+    <div class="who"><div class="avatar" style="background:var(--pink);">!</div>
+      <div><div class="name">อุปสรรค & Next Step (วาระ 18/09/2569)</div><div class="role">Key Learning & Challenge</div></div>
+    </div><div class="chev">▶</div>
+  </div>
+  <div class="body"><div class="body-inner">
+    <div class="section-title">อุปสรรคหลัก</div>
+    <ul class="list">
+      <li>การขอความร่วมมือกับ LSP — ต้องหาวิธีทำให้เขาอยากร่วมมือ</li>
+      <li>การสอนการใช้งาน App ยังเป็นเรื่องยากสำหรับผู้ใช้บางกลุ่ม</li>
+      <li>การดีลงานกับ Shipper ยังไปได้ช้า Supply ยังมีไม่มาก</li>
+      <li>Platform ยังอยู่ระหว่างพัฒนารูปแบบให้เหมาะสมกับการใช้งาน</li>
+    </ul>
+    <div class="section-title">แผนพัฒนาระยะยาว (Operation ต้องเตรียมพร้อม)</div>
+    <ul class="list">
+      <li>METRANS ต้องพร้อมเสริมรถกรณีมีเหตุฉุกเฉิน พร้อมแผน Support และซ้อมแผนฉุกเฉิน</li>
+      <li>จัดทำ Tier list ประเมินผู้ประกอบการ/LSP เพื่อควบคุมคุณภาพ</li>
+      <li>นำมาตรฐาน ISO 39000 มาใช้กับงานขนส่ง</li>
+    </ul>
+  </div></div>
+</div>
+
+<div class="note">📌 ข้อมูลทั้งหมดสรุปจากบอร์ดประชุมที่ส่งมาโดยตรง (12 ภาพ) — หากมีรายชื่อ/ตัวเลขอัปเดตใหม่กว่านี้ แจ้งเพิ่มได้ จะปรับแดชบอร์ดให้ทันที</div>
+<footer>MET Progress Dashboard · อัปเดตตามข้อมูลบอร์ด ณ 24 ก.ย. 2569</footer>
+</div>
+
+<script>
+function toggle(id){document.getElementById(id).classList.toggle('open');}
+</script>
+</body>
+</html>
